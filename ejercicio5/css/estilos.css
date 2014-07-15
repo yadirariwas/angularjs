@@ -1,0 +1,58 @@
+.search{
+	background: #EBEBEB;
+	width: 500px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.search h1{
+	font-size: 30px;
+	text-align: center;
+	margin: 5px;
+
+}
+
+.search input[type="text"]{
+	width: 100%;
+	background: url("http://visita.durango.gob.mx/media/turismo2013_theme/img/search-icon.png") no-repeat scroll 7px -23px / 16px auto white;
+	padding: 5px 5px 5px 25px;
+
+}
+
+.artistlist{
+	background: rgba(204, 204, 204, 0.42);
+	width: 400px;
+	margin: 0 auto;
+	list-style: none;
+	padding: 0;
+	border-radius: 5px;
+}
+
+.artist{
+	margin: 10px;
+	padding: 10px 0;
+	border-bottom: 1px dashed;
+}
+
+.artist:last-child{
+	border: none;
+}
+
+.artist img {
+	border-radius: 4px;
+}
+
+.info {
+	display: inline-block;
+}
+
+.info h2 {
+	font-size: 20px;
+	margin: 0;
+}
+
+.info h3{
+	font-size: 16px;
+	margin: 0;
+	color: rgb(189, 56, 56);
+}

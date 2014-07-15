@@ -1,0 +1,13 @@
+<section class="artistinfo">
+	<div class="artist cf" ng-model="artist">
+		<a href="#/details/{{prevItem}}" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-chevron-left"></span></a>
+		<a href="#/details/{{nextItem}}" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-chevron-right"></span></a>
+		<h1>{{artist[whichItem].name}}</h1>
+		<div class="info">
+			<h3>{{artist[whichItem].reknown}}</h3>
+			<img ng-src="http://www.durango.gob.mx/img/w:100/h:100/cr:1/{{artist[whichItem].idfoto}}" alt="Photo of {{artist[whichItem].name}}">
+			<div class="bio">{{artist[whichItem].bio}}</div>
+		</div>
+	</div>
+	<a href="index.html">&laquo; Back to search</a>
+</section>

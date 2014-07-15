@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Caliz</title>
+	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="../lib/angular/angular.js"></script>
+	<script src="js/controller.js"></script>
+</head>
+<body>
+	<div class="main" ng-controller="MyController">
+		<div class="search">
+			<h1>Artist Directory</h1>
+			<input type="text" placeholder="Search artist" ng-model="query">
+			<label class="formgroup">By</label>
+			<select ng-model="artistOrder">
+				<option value="name">Name</option>
+				<option value="reknown">Reknown</option>
+			</select>
+			<label class="formgroup">Asc</label>
+			<input type="radio" ng-model="direction" name="direction" checked>
+			
+			<label class="formgroup">Desc</label>
+			<input type="radio" ng-model="direction" name="direction" value="reverse">
+			
+			
+		</div>
+		<ul class="artistlist">
+			<li class="artist cf" ng-repeat="item in artist | filter: query | orderBy: artistOrder:direction">
+				<img ng-src="http://www.durango.gob.mx/img/w:100/h:100/cr:1/90284" alt="Photo of {{item.name}}">
+				<div class="info">
+					<h2>{{item.name}}</h2>
+					<h3>{{item.reknown}}</h3>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+	<script>
+		
+	</script>
+</body>
+</html>
